@@ -33,6 +33,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2CD3E71AFB7D4EA4E93B7330 /* Pods_Wired_Server.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E9D69FB4EDC8A64D7DCC1C3 /* Pods_Wired_Server.framework */; };
 		4C016F981778F6E200D6D2B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C016F9A1778F6E200D6D2B3 /* Localizable.strings */; };
 		4C233C8B1521022800245506 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */; };
 		4C233C911521022800245506 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C8F1521022800245506 /* InfoPlist.strings */; };
@@ -452,6 +453,7 @@
 		4CE5D55F244762BC000333FB /* Wired Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server.entitlements"; sourceTree = "<group>"; };
 		4CE5D560244762E9000333FB /* Wired Server Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server Helper.entitlements"; sourceTree = "<group>"; };
 		67FE8C95AEF31B6CAE0816AF /* Pods-Wired Server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Server.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server.release.xcconfig"; sourceTree = "<group>"; };
+		7E9D69FB4EDC8A64D7DCC1C3 /* Pods_Wired_Server.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wired_Server.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B133499021B1BA55004AF77F /* libwired */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libwired; path = wired/libwired; sourceTree = "<group>"; };
 		B133499421B1BA8F004AF77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B133499521B1BA8F004AF77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Settings.xib; sourceTree = "<group>"; };
@@ -484,6 +486,7 @@
 				B133499F21B1BE6B004AF77F /* libsqlite3.dylib in Frameworks */,
 				4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */,
 				B133499D21B1BD9F004AF77F /* Quartz.framework in Frameworks */,
+				2CD3E71AFB7D4EA4E93B7330 /* Pods_Wired_Server.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +566,7 @@
 				B133499821B1BD8D004AF77F /* WebKit.framework */,
 				4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */,
 				4C8D335A151E2D8D001A6BF7 /* Other Frameworks */,
+				7E9D69FB4EDC8A64D7DCC1C3 /* Pods_Wired_Server.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1006,11 +1010,11 @@
 				ORGANIZATIONNAME = OPALE;
 				TargetAttributes = {
 					4C233C881521022800245506 = {
-						DevelopmentTeam = 7KTXA5Y36K;
+						DevelopmentTeam = K7JKFL8Q4M;
 						ProvisioningStyle = Manual;
 					};
 					4C8D3353151E2D8D001A6BF7 = {
-						DevelopmentTeam = 7KTXA5Y36K;
+						DevelopmentTeam = K7JKFL8Q4M;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -1149,7 +1153,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Wired Server/Pods-Wired Server-frameworks.sh",
 				"${PODS_ROOT}/Sparkle/Sparkle.framework",
 				"${PODS_ROOT}/Sparkle/Sparkle.framework.dSYM",
 			);
@@ -1160,7 +1164,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wired Server/Pods-Wired Server-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wired Server/Pods-Wired Server-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4C8A853F21B05BB2001154BC /* ShellScript */ = {
@@ -1204,7 +1208,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Type a script or drag a script file from your workspace to insert its path.\ncodesign --force --sign \"Developer ID Application: Rafael Warnault (7KTXA5Y36K)\" \"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Type a script or drag a script file from your workspace to insert its path.\n#codesign --force --sign \"Developer ID Application: Rafael Warnault (7KTXA5Y36K)\" \"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1372,7 +1376,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 19;
-				DEVELOPMENT_TEAM = 7KTXA5Y36K;
+				DEVELOPMENT_TEAM = K7JKFL8Q4M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server Helper/Wired Server Helper-Prefix.pch";
@@ -1397,7 +1401,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 19;
-				DEVELOPMENT_TEAM = 7KTXA5Y36K;
+				DEVELOPMENT_TEAM = K7JKFL8Q4M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wired Server Helper/Wired Server Helper-Prefix.pch";
@@ -1575,7 +1579,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 19;
-				DEVELOPMENT_TEAM = 7KTXA5Y36K;
+				DEVELOPMENT_TEAM = K7JKFL8Q4M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1617,7 +1621,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 19;
-				DEVELOPMENT_TEAM = 7KTXA5Y36K;
+				DEVELOPMENT_TEAM = K7JKFL8Q4M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
